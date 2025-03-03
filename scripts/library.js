@@ -67,14 +67,12 @@ Book.prototype.display = function() {
     read.innerText = `Read: ${this.read}`;
     deleteButton.innerText = "Remove Book";
     this.bookCard.className = "book-card";
-
     this.bookCard.appendChild(title);
     this.bookCard.appendChild(author);
     this.bookCard.appendChild(pages);
     this.bookCard.appendChild(read);
     this.bookCard.appendChild(deleteButton);
     booksDisplay.appendChild(this.bookCard);
-
     this.displayed = true;
 };
 

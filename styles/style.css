@@ -3,6 +3,34 @@
     font-family: monospace;
 }
 
+body {
+    margin: 0;
+}
+
+.page-content {
+    height: 90vh;
+    background-color: #F4F3EE;
+    padding: 20px 0;
+}
+
+header {
+    margin: 0;
+    padding: 0px 20px;
+    background-color: #873D48;
+    height: 10vh;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-button-container {
+    align-content: center;
+}
+
+h1 {
+    align-content: center;
+}
+
 .form-popup {
     display: none; /* hidden by defualt */
     padding: 20px;
@@ -84,4 +112,8 @@ button:hover {
     gap: 5px;
     background-color: #37718E;
     color: #F4F3EE;
+}
+
+.book-card {
+    border-radius: 20px;
 }

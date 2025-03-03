@@ -8,49 +8,51 @@
 </head>
 <body>
     <header>
-        Odin's Library
+        <h1>Odin's Library</h1>
+        <div id="form-button-container">
+            <button class="show-form">+Add a Book</button>
+        </div>
     </header>
 
-    <div id="form-button-container">
-        <button class="show-form">+Add a Book</button>
+    <div class="page-content">
+        <div id="books-display">
+        </div>
+    
+        <div class="form-popup">
+            <h2>Enter Book's Information</h2>
+            <form action="">
+                <div class="input-container">
+                    <label for="book-title">Book Title: </label>
+                    <input type="text" name="book-title" id="book-title" required>
+                    <span class="alert-message"></span>
+                </div>
+    
+                <div class="input-container">
+                    <label for="author-name">Author:</label>
+                    <input type="text" name="author-name" id="author-name" required>
+                    <span class="alert-message"></span>
+                </div>
+    
+                <div class="input-container">
+                    <label for="page-number">Pages: </label>
+                    <input type="number" name="page-number" id="page-number" required>
+                    <span class="alert-message"></span>
+                </div>
+    
+                <div class="input-container">
+                    <label for="read">Read: </label>
+                    <input type="checkbox" name="read" id="read" required>
+                    <span class="alert-message"></span>
+                </div>
+    
+                <div class="button-container">
+                    <button type="button" class="submit-btn">Enter Book</button>
+                    <button type="button" class="btn-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div id="books-display">
-    </div>
-
-    <div class="form-popup">
-        <h2>Enter Book's Information</h2>
-        <form action="">
-            <div class="input-container">
-                <label for="book-title">Book Title: </label>
-                <input type="text" name="book-title" id="book-title" required>
-                <span class="alert-message"></span>
-            </div>
-
-            <div class="input-container">
-                <label for="author-name">Author:</label>
-                <input type="text" name="author-name" id="author-name" required>
-                <span class="alert-message"></span>
-            </div>
-
-            <div class="input-container">
-                <label for="page-number">Pages: </label>
-                <input type="number" name="page-number" id="page-number" required>
-                <span class="alert-message"></span>
-            </div>
-
-            <div class="input-container">
-                <label for="read">Read: </label>
-                <input type="checkbox" name="read" id="read" required>
-                <span class="alert-message"></span>
-            </div>
-
-            <div class="button-container">
-                <button type="button" class="submit-btn">Enter Book</button>
-                <button type="button" class="btn-cancel">Cancel</button>
-            </div>
-        </form>
-    </div>
+    
     <script src="scripts/library.js"></script>
 </body>
 </html>
