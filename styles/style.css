@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.form-popup {
+    display: none; /* hidden by defualt */
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #37718E;
+    border: 2px solid #254E70;
+    width: 500px;
+    height: 250px;
+    color: #F4F3EE;
+    position: absolute;
+    --page-width: 100vw;
+    --page-height: 100vh;
+    left: calc(calc(var(--page-width) / 2) - 250px);
+    top: calc(calc(var(--page-height) / 2) - 125px);
+}
+
+.form-popup h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    height: 165px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-container input {
+    flex-grow: 1;
+    background-color: #F4F3EE;
+    border: none;
+}
+
+.input-container label {
+    display: inline-block;
+    min-width: 90px;
+    text-align: left;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+button {
+    background-color: #254E70;
+    color: #F4F3EE;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #BCB8B1;
+}
+
+#books-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+#books-display>div {
+    width: 300px;
+    border: 3px solid #254E70;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #37718E;
+    color: #F4F3EE;
+}
